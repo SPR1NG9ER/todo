@@ -1,0 +1,49 @@
+.innerTodo{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    color: #262626
+}
+
+.innerTodo button i{
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.innerTodo button:first-child{
+    margin-right: 5px;
+}
+
+.TodoButtons button{
+    border-radius: 6px;
+    border: 2px solid;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.done{
+    background: #fff;
+    color: #00FF4D;
+    border-color: #00FF4D;
+}
+
+.delete{
+    border-color: #F31309;
+    color: #F31309;
+    background: #fff;
+}
+
+.done:hover{
+    background: #00FF4D;
+    color: #fff;
+    border-color: #00FF4D;
+}
+
+.delete:hover{
+    background: #F31309;
+    color: #fff;
+    border-color: #F31309;
+}
+
+.todoContent .fa-star{
+    color: #f1f102;
+}

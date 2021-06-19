@@ -1,0 +1,30 @@
+.filterPanel{
+    display: flex;
+}
+.filterPanel button{
+    padding: 0 10px;
+    background: #1976E2;
+    color: white;
+    border: 1px solid #bfbfbf;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: inherit;
+    transition: all .3s ease;
+}
+
+button.active{
+    background: #1560b6;
+}
+
+.filterPanel button:hover{
+    background: #176bcd;
+    color: #d0d0d0;
+}
+
+.filterPanel button:first-child{
+    border-radius: 8px 0 0 8px;
+}
+
+.filterPanel button:last-child{
+    border-radius: 0 8px 8px 0;
+}

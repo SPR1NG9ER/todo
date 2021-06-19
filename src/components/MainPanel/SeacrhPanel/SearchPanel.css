@@ -1,0 +1,23 @@
+.search{
+    border: 1px solid #ccc;
+    font-size: 2rem;
+    padding: 5px;
+    font-family: inherit;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.searchPanel{
+    width: 100%;
+    position: relative;
+    margin-right: 10px;
+}
+
+.searchDecoration{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: gray;
+}
