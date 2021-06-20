@@ -10,8 +10,8 @@
     padding: 5px;
 }
 
-.innerTodo button:first-child{
-    margin-right: 5px;
+.innerTodo button:last-child{
+    margin-right: 0;
 }
 
 .TodoButtons button{
@@ -19,23 +19,37 @@
     border: 2px solid;
     cursor: pointer;
     transition: all .3s ease;
+    margin-right: 5px;
 }
+
 .done{
     background: #fff;
     color: #00FF4D;
     border-color: #00FF4D;
 }
 
-.delete{
-    border-color: #F31309;
-    color: #F31309;
-    background: #fff;
-}
-
 .done:hover{
     background: #00FF4D;
     color: #fff;
     border-color: #00FF4D;
+}
+
+.importantBtn{
+    background: #fff;
+    color: #f1f102;
+    border-color: #f1f102;
+}
+
+.importantBtn:hover{
+    background: #f1f102;
+    color: #fff;
+    border-color: #f1f102;
+}
+
+.delete{
+    border-color: #F31309;
+    color: #F31309;
+    background: #fff;
 }
 
 .delete:hover{
@@ -46,4 +60,13 @@
 
 .todoContent .fa-star{
     color: #f1f102;
+    margin-left: 5px;
+}
+
+.completed .todoContent{
+    text-decoration: line-through;
+}
+
+.important .todoContent{
+    color: steelblue;
 }
