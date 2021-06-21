@@ -14,7 +14,9 @@
 
 ### Есть вывод статистики сколько осталось и сколько выполнено заданий 
 
+##  GitHub Pages
 [Открыть на GitHub Pages](https://spr1ng9er.github.io/todo/)
+https://spr1ng9er.github.io/todo/
 
 ## Запустить у себя: 
 
