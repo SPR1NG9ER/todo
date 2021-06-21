@@ -16,9 +16,9 @@ class App extends React.Component {
             this.createTask("Make Awesome React App"),
             this.createTask("Eat Pizza")
         ],
+        term: "",
+        filter: ""
     }
-
-
 
     createTask(challenge) {
         return {challenge, important: false, done: false, id: this.startId++}
@@ -76,20 +76,56 @@ class App extends React.Component {
         })
     }
 
+    setTerm = (newTerm) => {
+        this.setState(() => {
+            return{
+                term: newTerm
+            }
+        })
+    }
+
+    search = (items, term) => {
+        if(term === ""){
+            return items;
+        }
+
+        return items.filter(item => {
+            return item.challenge.toLowerCase().indexOf(term.toLowerCase()) > -1;
+        })
+    }
+
+    filter = (items, filter) => {
+        switch (filter) {
+            case "all":
+                return items;
+            case "active":
+                return items.filter( item => !item.done)
+            case "done":
+                return items.filter( item => item.done);
+            default:
+                return items
+        }
+    }
+
+    setFilter = (filter) => {
+        this.setState({filter})
+    }
+
     render() {
+
+        const {todoData, term, filter} = this.state;
+
         const toDoCount = this.state.todoData.filter( el => el.done).length;
         const toDoLeft = this.state.todoData.length - toDoCount;
-
-        console.log(toDoCount);
-        console.log(toDoLeft)
+        let visibleItems = this.filter(this.search(todoData, term),this.state.filter);
 
         return (
             <main className="main">
                 <AppHeader/>
-                <MainPanel/>
+                <MainPanel setTerm={this.setTerm} setFilter={this.setFilter} filter={filter}/>
                 <TaskStats toDoCount={toDoCount} toDoLeft={toDoLeft}/>
                 <TodoList onDelete={this.deleteTask} makeImportant={this.makeImportant} makeDone={this.makeDone}
-                          Todos={this.state.todoData}/>
+                          Todos={visibleItems}/>
                 <CreateTask onCreate={this.addTask}/>
             </main>
         );

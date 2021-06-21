@@ -15,7 +15,7 @@ class TodoListItem extends React.Component {
         return (
             <span className={classNames}>
             <div className="todoContent">
-                {challenge} {important ? <i className="fas fa-star"/> : null}
+                <span>{challenge}</span> {important ? <i className="fas fa-star"/> : null}
             </div>
             <div className="TodoButtons">
                 <button className="done" title="done" onClick={makeDone}><i className="fas fa-check"/></button>

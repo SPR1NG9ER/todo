@@ -2,11 +2,11 @@ import "./MainPanel.css";
 import SearchPanel from "./SeacrhPanel";
 import FilterPanel from "./FilterPanel";
 
-const MainPanel = () => {
+const MainPanel = ({setTerm, setFilter, filter}) => {
     return (
         <div className="mainPanel">
-            <SearchPanel/>
-            <FilterPanel />
+            <SearchPanel setTerm={setTerm}/>
+            <FilterPanel setFilter={setFilter} filter={filter}/>
         </div>
     )
 }
