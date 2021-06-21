@@ -14,7 +14,7 @@
     margin-right: 0;
 }
 
-.TodoButtons button{
+.todoButtons button{
     border-radius: 6px;
     border: 2px solid;
     cursor: pointer;
@@ -69,4 +69,14 @@
 
 .important .todoContent{
     color: steelblue;
+}
+
+.todoButtons {
+    min-width: 115px;
+}
+
+@media screen and (max-width: 480px){
+    .innerTodo{
+        flex-direction: column;
+    }
 }

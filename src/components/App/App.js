@@ -17,7 +17,7 @@ class App extends React.Component {
             this.createTask("Eat Pizza")
         ],
         term: "",
-        filter: ""
+        filter: "all"
     }
 
     createTask(challenge) {

@@ -28,3 +28,15 @@ button.active{
 .filterPanel button:last-child{
     border-radius: 0 8px 8px 0;
 }
+
+@media screen and (max-width: 480px){
+    .filterPanel{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .filterPanel button{
+        width: 33.333%;
+        padding: 10px;
+    }
+}

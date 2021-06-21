@@ -17,7 +17,7 @@ class TodoListItem extends React.Component {
             <div className="todoContent">
                 <span>{challenge}</span> {important ? <i className="fas fa-star"/> : null}
             </div>
-            <div className="TodoButtons">
+            <div className="todoButtons">
                 <button className="done" title="done" onClick={makeDone}><i className="fas fa-check"/></button>
                 <button className="importantBtn" onClick={makeImportant}><i className="fas fa-star"/></button>
                 <button className="delete" title="delete" onClick={onDelete}><i className="fas fa-trash-alt"/></button>
