@@ -16,6 +16,7 @@
 
 ##  GitHub Pages
 [Открыть на GitHub Pages](https://spr1ng9er.github.io/todo/)
+
 https://spr1ng9er.github.io/todo/
 
 ## Запустить у себя: 
@@ -28,6 +29,6 @@ https://spr1ng9er.github.io/todo/
 
 `npm start`
 
-### Соц. сети
+## Соц. сети
 
 [GitHub](https://spr1ng9er.github.io/todo/) | [ВК](https://vk.com/id304603991) | [Telegram](https://t.me/powerofweb) 
